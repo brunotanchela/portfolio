@@ -9,7 +9,7 @@
 
 **Aluno:** Bruno Tanchela — Curso de Desenvolvimento de Sistemas (ETEC)
 
-🔗 **Site publicado:** [COLE_AQUI_O_LINK_DO_GITHUB_PAGES](COLE_AQUI_O_LINK_DO_GITHUB_PAGES)
+🔗 **Site publicado:** [[LINK_DO_SITE](https://brunotanchela.github.io/portfolio/)]([LINK_DO_SITE](https://brunotanchela.github.io/portfolio/))
 
 ---
 
