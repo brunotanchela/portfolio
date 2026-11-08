@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bruno Tanchela | Portfólio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/estilo.css" rel="stylesheet"> <!-- depois do Bootstrap, para sobrescrever -->
+</head>
+<body>
+
+    <!-- MENU DE NAVEGAÇÃO -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#perfil">Bruno Tanchela</a>
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#menu"
+                    aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="#perfil">Perfil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <button id="tema" class="btn btn-outline-light btn-sm">Alternar tema</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PERFIL -->
+    <section id="perfil" class="py-5">
+        <div class="container text-center">
+            <img src="imgs/foto_profissionalbruno.png" alt="Foto de Bruno Tanchela"
+                 class="rounded-circle mb-3" width="160" height="160" style="object-fit: cover;">
+            <h1>É um prazer! Eu sou Bruno Tanchela</h1>
+            <p class="lead">Estudante de Desenvolvimento de Sistemas, focado em back-end e Python.</p>
+            <a href="#projetos" class="btn btn-primary btn-lg">Ver projetos</a>
+            <a href="#contato" class="btn btn-outline-secondary btn-lg">Fale comigo</a>
+        </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="projetos" class="py-5 bg-body-tertiary">
+        <div class="container">
+            <h2 class="text-center mb-4">Projetos</h2>
+
+            <!-- row-cols-md-3: três cards lado a lado; no celular, um por linha -->
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+
+                <div class="col">
+                    <div class="card h-100"> <!-- mesma altura -->
+                        <img src="imgs/desconto.png" class="card-img-top" alt="Captura do projeto Calculadora de Descontos">
+                        <div class="card-body d-flex flex-column"> <!-- coluna flexível -->
+                            <h5 class="card-title">Calculadora de Descontos</h5>
+                            <p class="card-text">Programa em Python que calcula o desconto segundo o valor e a porcentagem.</p>
+                            <a href="https://github.com/brunotanchela/desconto-progressivo" target="_blank"
+                               class="btn btn-primary mt-auto">Ver no GitHub</a> <!-- empurra para o fundo -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="imgs/chatbot.png" class="card-img-top" alt="Captura do projeto Chatbot de IA">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Chatbot de IA</h5>
+                            <p class="card-text">Feito em Python, funciona de forma semelhante ao Gemini.</p>
+                            <a href="https://github.com/brunotanchela/Projetos/tree/main/ChatbotIA" target="_blank"
+                               class="btn btn-primary mt-auto">Ver no GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="imgs/nivel_agua.png" class="card-img-top" alt="Captura do projeto Calculadora de níveis de água">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Calculadora de níveis de água</h5>
+                            <p class="card-text">Programa em Python com Colorama que mostra um feedback colorido do nível d'água.</p>
+                            <a href="https://github.com/brunotanchela/niveis_agua" target="_blank"
+                               class="btn btn-primary mt-auto">Ver no GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- HABILIDADES (recurso novo) -->
+    <section id="habilidades" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Habilidades</h2>
+
+            <!-- Hard skills -->
+            <div class="text-center mb-5">
+                <div class="mb-3">
+                    <span class="badge text-bg-primary">Python</span>
+                    <span class="badge text-bg-success">HTML5</span>
+                </div>
+                <div class="progress mx-auto" role="progressbar" aria-label="Python"
+                     aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+                     style="height: 20px; max-width: 500px;">
+                    <div class="progress-bar" style="width: 80%">Python</div>
+                </div>
+            </div>
+
+            <!-- Idiomas e soft skills lado a lado (empilham no celular) -->
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <h3 class="h4 fw-bold mb-3">Idiomas</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item"><span class="me-2">🇬🇧</span>Inglês: Avançado (C1)</li>
+                        <li class="list-group-item"><span class="me-2">🇮🇹</span>Italiano: Básico/Intermediário (A2/B1)</li>
+                        <li class="list-group-item"><span class="me-2">🇧🇷</span>Português: Nativo</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6">
+                    <h3 class="h4 fw-bold mb-3">Soft Skills</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item">Expresso ideias com clareza</li>
+                        <li class="list-group-item">Possuo um bom pensamento crítico</li>
+                        <li class="list-group-item">Sou realista, por isso consigo liderar bem</li>
+                        <li class="list-group-item">Inteligência emocional</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="py-5 bg-body-tertiary">
+        <div class="container text-center">
+            <h2 class="mb-4">Contato</h2>
+            <p>Encontre-me em:</p>
+            <a href="https://github.com/brunotanchela" target="_blank" class="btn btn-dark">GitHub</a>
+            <a href="mailto:tanchela.bruno@gmail.com" class="btn btn-outline-secondary">E-mail</a>
+        </div>
+    </section>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById("tema").addEventListener("click", () => {
+            const html = document.documentElement;
+            html.setAttribute("data-bs-theme",
+                html.getAttribute("data-bs-theme") === "dark" ? "light" : "dark");
+        });
+    </script>
+</body>
+</html>

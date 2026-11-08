@@ -1,0 +1,10 @@
+html { scroll-behavior: smooth; }
+section { scroll-margin-top: 70px; }
+.card { transition: transform .25s, box-shadow .25s; }
+.card:hover { transform: translateY(-8px); box-shadow: 0 12px 24px rgba(0,0,0,.18); }
+.card-img-top {
+    height: 180px;
+    object-fit: cover;
+}
+.btn { transition: transform .2s; }
+.btn:hover { transform: scale(1.05); }
